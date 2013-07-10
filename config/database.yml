@@ -1,0 +1,23 @@
+development:
+  adapter: mysql2
+  encoding: utf8
+  database: demo_app
+  username: root
+  password: 'kaliningrad12321'
+
+test: &test
+  adapter: mysql2
+  encoding: utf8
+  database: demo_app_test
+  username: root
+  password: 'kaliningrad12321'
+
+production:
+  adapter: mysql2
+  encoding: utf8
+  database: demo_app_prod
+  username: root
+  password: 'kaliningrad12321'
+
+cucumber:
+  <<: *test
